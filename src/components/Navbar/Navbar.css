@@ -1,0 +1,120 @@
+.container{
+    height: 60px;
+    /* background-color: rgba(255, 0, 0, 0); */
+    position: absolute;
+    width: 100%;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.wrapper{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menuItem{
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 25px;
+    text-decoration: none;
+    line-height: 180%;
+    pointer-events: all;
+    border-bottom: black 1px solid;
+    text-transform: uppercase;
+}
+
+.menuItem:hover{
+    color: white;
+    border-bottom: white 1px solid;
+    transition: ease-out .2s;
+}
+
+#acessibility{
+    border: none;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+}
+
+.playbackWrapper{
+    box-sizing: border-box;
+    
+}
+
+.playbackControls{
+    border: 0.1px solid black;
+    border-radius: 50px;
+    height: 56px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    /* align-content: start; */
+    box-sizing: content-box;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftButton{
+    background: none;
+    border: none;
+    padding: 15px 12px 17px 0px;
+    min-width: 230px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-content: start;
+    overflow: hidden;
+    border-right: 1px solid black;
+}
+
+.leftButton:hover{
+    background-color: white;
+    cursor: pointer;
+    transition: ease-out .2s;
+}
+
+.rightButton{
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    padding: 16px;
+}
+
+.rightButton:hover{
+    background-color: white;
+    transition: ease-out .2s;
+    cursor: pointer;
+} 
+
+@media (max-width: 600px) {
+    .wrapper{
+        padding: 5px 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .right{
+        margin-top: 40px;
+    }
+
+    .menuItem{
+        font-size: 13px;
+    }
+  }
