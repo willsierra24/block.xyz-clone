@@ -4,8 +4,8 @@ import * as auth from 'https://unpkg.com/@tidal-music/auth/dist';
 import { setCredentialsProvider } from 'https://unpkg.com/@tidal-music/player-web-components/dist';
 import {Accessibility, PlayArrow, DragIndicator} from '@mui/icons-material';
 
-const clientId = 'Btt0eiBn3dI5ul84';
-const clientSecret = '6tUSaPCQlMekTnCwLVpuLjvLZfg00PGyPaYAuiRKfmI=';
+const clientId = import.meta.env.VITE_CLIENT_ID;
+const clientSecret = import.meta.env.VITE_CLIENT_SECRET;
 
 const TidalPlayer = () => {
   useEffect(() => {
